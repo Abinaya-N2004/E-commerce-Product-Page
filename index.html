@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1 class="heading">🛒 Tech Accessories Store</h1>
+    <div class="cart-bar">
+      🧺 Cart Items: <span id="cart-count">0</span> | Total: ₹<span id="cart-total">0</span>
+    </div>
+  </header>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="Wired Earphones images.jpeg" alt="Earphones" />
+      <h2>Wired Earphones</h2>
+      <p class="price">₹599</p>
+      <p>Crystal clear sound with mic. Tangle-free wire.</p>
+      <button onclick="addToCart('Wired Earphones', 599)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Fitness Band image.jpg" alt="Fitness Band" />
+      <h2>Fitness Band</h2>
+      <p class="price">₹1,499</p>
+      <p>Tracks steps, heart rate & sleep. OLED display.</p>
+      <button onclick="addToCart('Fitness Band', 1499)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Laptop Stand image.jpg" alt="Laptop Stand" />
+      <h2>Laptop Stand</h2>
+      <p class="price">₹899</p>
+      <p>Adjustable aluminum stand for 10-15.6" laptops.</p>
+      <button onclick="addToCart('Laptop Stand', 899)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="phone-stand.jpg" alt="Phone Holder" />
+      <h2>Phone Holder</h2>
+      <p class="price">₹299</p>
+      <p>360° adjustable stand for desks and video calls.</p>
+      <button onclick="addToCart('Phone Holder', 299)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="smart watch.avif" alt="Smartwatch" />
+      <h2>Smartwatch</h2>
+      <p class="price">₹2,999</p>
+      <p>Touchscreen smartwatch with call & fitness features.</p>
+      <button onclick="addToCart('Smartwatch', 2999)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Bluetooth-Speakers.avif" alt="Bluetooth Speaker" />
+      <h2>Bluetooth Speaker</h2>
+      <p class="price">₹1,799</p>
+      <p>Portable speaker with deep bass and 12hr battery life.</p>
+      <button onclick="addToCart('Bluetooth Speaker', 1799)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Power Bank.jpg" alt="Power Bank" />
+      <h2>Power Bank</h2>
+      <p class="price">₹1,299</p>
+      <p>10000mAh fast charging for mobile devices.</p>
+      <button onclick="addToCart('Power Bank', 1299)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="4-Port USB Hub.webp" alt="USB Hub" />
+      <h2>4-Port USB Hub</h2>
+      <p class="price">₹399</p>
+      <p>Compact USB 2.0 hub for multiple device connections.</p>
+      <button onclick="addToCart('USB Hub', 399)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Wireless Mouse.jpg" alt="Wireless Mouse" />
+      <h2>Wireless Mouse</h2>
+      <p class="price">₹549</p>
+      <p>Ergonomic wireless mouse with 2.4GHz connectivity.</p>
+      <button onclick="addToCart('Wireless Mouse', 549)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="HD Webcam.jpg" alt="Webcam" />
+      <h2>HD Webcam</h2>
+      <p class="price">₹999</p>
+      <p>1080p webcam for video calls and meetings with mic.</p>
+      <button onclick="addToCart('HD Webcam', 999)">Add to Cart</button>
+    </div>
+  </div>
+
+  <h2 class="cart-title">🧾 Cart Details</h2>
+  <div id="cart-items" class="cart-list">
+    <p>Your cart is empty.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
